@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SearchBar from '../components/SearchBar.tsx';
+import Results from '../components/Results.tsx';
+---
+
+<Layout>
+	<h1>Search</h1>
+  <SearchBar client:load />
+  <Results client:load />
+</Layout>
